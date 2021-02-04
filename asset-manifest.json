@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/NeoChenDev-Website/static/css/main.c91e2cbe.chunk.css",
+    "main.js": "/NeoChenDev-Website/static/js/main.b3a1e809.chunk.js",
+    "main.js.map": "/NeoChenDev-Website/static/js/main.b3a1e809.chunk.js.map",
+    "runtime-main.js": "/NeoChenDev-Website/static/js/runtime-main.9fa4699e.js",
+    "runtime-main.js.map": "/NeoChenDev-Website/static/js/runtime-main.9fa4699e.js.map",
+    "static/js/2.44fe6493.chunk.js": "/NeoChenDev-Website/static/js/2.44fe6493.chunk.js",
+    "static/js/2.44fe6493.chunk.js.map": "/NeoChenDev-Website/static/js/2.44fe6493.chunk.js.map",
+    "index.html": "/NeoChenDev-Website/index.html",
+    "static/css/main.c91e2cbe.chunk.css.map": "/NeoChenDev-Website/static/css/main.c91e2cbe.chunk.css.map",
+    "static/js/2.44fe6493.chunk.js.LICENSE.txt": "/NeoChenDev-Website/static/js/2.44fe6493.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9fa4699e.js",
+    "static/js/2.44fe6493.chunk.js",
+    "static/css/main.c91e2cbe.chunk.css",
+    "static/js/main.b3a1e809.chunk.js"
+  ]
+}
