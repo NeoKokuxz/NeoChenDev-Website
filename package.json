@@ -1,7 +1,11 @@
 {
   "name": "neochendev-website",
   "version": "0.1.0",
+<<<<<<< HEAD
   "homepage": "https://neochen.dev",
+=======
+  "homepage": "https://neochen.dev",
+>>>>>>> 192b3faa9b0433beaddff8649c9611b3bd7a6b2c
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
