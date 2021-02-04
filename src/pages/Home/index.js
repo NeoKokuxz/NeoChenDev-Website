@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import Sidebar from '../../components/Sidebar'
 import Navbar from '../../components/Navbar'
 import DisplaySection from '../../components/DisplaySection'
+import Typical from 'react-typical'
+
 
 const Home = () => {
 
