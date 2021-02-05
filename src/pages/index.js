@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-import Sidebar from '../../components/Sidebar'
-import Navbar from '../../components/Navbar'
-import DisplaySection from '../../components/DisplaySection'
-import Typical from 'react-typical'
-
+import Sidebar from '../components/Sidebar'
+import Navbar from '../components/Navbar'
+import DisplaySection from '../components/DisplaySection'
+import InfoSection from '../components/InfoSection'
+import { homeObjOne } from '../components/InfoSection/Data'
 
 const Home = () => {
 
@@ -19,6 +19,7 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <DisplaySection />
+            <InfoSection {...homeObjOne}/>
         </>
     )
 }

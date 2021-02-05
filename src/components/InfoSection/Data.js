@@ -1,0 +1,16 @@
+export const homeObjOne = {
+    id: 'about',
+    lightBg: false,
+    lightText: true,
+    lightTextdesc: true,
+    topLine: 'About Me',
+    heading: 'Education and Experience',
+    description: 'DESC',
+    buttonLabel: 'next: Projects',
+    imgStart: false,
+    img: '/images/undraw_profile_pic_ic5t.svg',
+    alt:'AboutMeSvg',
+    dark: true,
+    primary: true,
+    darkText: false,
+}

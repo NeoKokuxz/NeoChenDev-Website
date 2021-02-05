@@ -15,7 +15,7 @@ const DisplaySection = () => {
     return (
         <DisplayContainer id="display">
             <DisplayBg>
-                <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />     Your browser does not support the video tag.
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4' playsInline='true' webkit-playsInline='true'/>
             </DisplayBg>
             <DisplayContent>
                 <DisplayH1>
