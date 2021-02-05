@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import {DisplayContainer, VideoBg, DisplayBg, DisplayContent, DisplayH1, DisplayP, DisplayBtnWrapper, ArrowForward, ArrowRight} from './DisplayElements'
+import React, { useState } from 'react'
+import { DisplayContainer, VideoBg, DisplayBg, DisplayContent, DisplayH1, DisplayP, DisplayBtnWrapper, ArrowForward, ArrowRight } from './DisplayElements'
 import Video from '../../videos/display.mp4'
 import { Button } from '../ButtonElements'
 import TextLoop from "react-text-loop"
@@ -15,7 +15,7 @@ const DisplaySection = () => {
     return (
         <DisplayContainer id="display">
             <DisplayBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' playsInline='true' webkit-playsInline='true'/>
+                <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />     Your browser does not support the video tag.
             </DisplayBg>
             <DisplayContent>
                 <DisplayH1>
@@ -28,7 +28,7 @@ const DisplaySection = () => {
                 </TextLoop>{" "}
                 <DisplayBtnWrapper>
                     <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark="true">
-                        Learn more {hover ? <ArrowForward /> : <ArrowRight/>}
+                        Learn more {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </DisplayBtnWrapper>
             </DisplayContent>
