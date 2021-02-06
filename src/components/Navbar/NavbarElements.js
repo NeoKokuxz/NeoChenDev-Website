@@ -4,9 +4,9 @@ import { Link as LinkScroll} from 'react-scroll'
 
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({lightBg}) => (lightBg ? '#646c74' : '#051323')};  //#646c74 grey #051323 navy blue
     height: 80px;
-    margin-top: -80px;
+    /* margin-top: -80px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +38,7 @@ export const NavLogo = styled(LinkRouter) `
     display: flex;
     align-items: center;
     margin-left: 24px;
+    margin-right: 24px;
     font-weight: bold;
     text-decoration: none;
 `
@@ -85,7 +86,7 @@ export const NavLinks = styled(LinkScroll)`
 
 
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 5px solid #ebb334;
     }
 `
 
@@ -100,7 +101,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter) `
     border-radius: 50px;
-    background: #01bf71;
+    background:#ebb334;
     white-space: nowrap;
     padding: 10px 22px;
     font-size: 16px;
@@ -109,11 +110,11 @@ export const NavBtnLink = styled(LinkRouter) `
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    color: #fff;
+    color: #000;
 
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
-        color: #010606;
+        color: #000;
     }
 `
