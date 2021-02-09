@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars } from 'react-icons/fa';
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
+  
+  const [color, setColor ] = useState('#646c74')
+
+  const changeBackground = () => {
+    if(window.scrollY >= 898 && window.scrollY <= 1997){
+      //section = 'about'
+      setColor('#646c74')
+    }
+    else if(window.scrollY >= 1998 && window.scrollY <= 3097) {
+      //section = 'project'
+      setColor('#051323')
+
+    }
+    else if(window.scrollY >= 3098) {
+      //section = 'resume'
+      setColor('#646c74')
+    }
+  }
+
+  window.addEventListener('scroll', changeBackground)
+
   return (
     <>
-      <Nav>
+      <Nav style={{backgroundColor: color}}>
         <NavbarContainer>
           <NavLinks to="display" smooth={true}
                 duration={500}
@@ -23,9 +44,6 @@ const Navbar = ({ toggle }) => {
                 spy={true} exact="true"
                 offset={-80}>About</NavLinks>
             </NavItem>
-            {/* <NavItem>
-              <NavLinks to="discover">Discover</NavLinks>
-            </NavItem> */}
             <NavItem>
               <NavLinks to="projects" smooth={true}
                 duration={500}
@@ -40,7 +58,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/email" smooth={true}
+            <NavBtnLink to="email" smooth={true}
               duration={500}
               spy={true} exact="true"
               offset={-80}>Contact</NavBtnLink>

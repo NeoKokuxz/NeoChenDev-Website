@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
-import { Link as LinkScroll} from 'react-scroll'
-
+import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: ${({lightBg}) => (lightBg ? '#646c74' : '#051323')};  //#646c74 grey #051323 navy blue
+   //background: ${({lightBg}) => (lightBg ? '#646c74' : '#051323')};  //#646c74 grey #051323 navy blue
     height: 80px;
     /* margin-top: -80px; */
     display: flex;
@@ -83,7 +82,6 @@ export const NavLinks = styled(LinkScroll)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-
 
     &.active {
         border-bottom: 5px solid #ebb334;

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {DisplayContainer, VideoBg, DisplayBg, DisplayContent, DisplayH1, DisplayP, DisplayBtnWrapper, ArrowForward, ArrowRight, DisplayH2} from './DisplayElements'
 import Video from '../../videos/view.mp4'
-import { Button } from '../ButtonElements'
+import { Button } from '../Misc/ButtonElements'
 import TextLoop from "react-text-loop"
 
 const DisplaySection = () => {

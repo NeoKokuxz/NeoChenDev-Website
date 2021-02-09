@@ -49,3 +49,20 @@ export const DiscoverObject = {
     primary: true,
     darkText: false,
 }
+
+export const ProjectObject = {
+    id: 'projects',
+    lightBg: false,
+    lightText: true,
+    lightTextdesc: true,
+    topLine: 'My Projects',
+    heading: 'Java Developer \nSoftware Engineer',
+    description: 'This is Project',
+    buttonLabel: 'View my resume',
+    imgStart: false,
+    img: '/images/undraw_data_reports_706v.svg',
+    alt:'AboutMeSvg',
+    dark: true,
+    primary: true,
+    darkText: true,
+}
