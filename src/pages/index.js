@@ -13,10 +13,10 @@ const Home = () => {
     //Function to change the state to toggle
     const [isOpen, setIsOpen] = useState(false);
 
-    const [InfoRef, InfoRefInView] = useInView({ threshold: 0.9 });
-    const [ProjectRef, ProjectRefInView] = useInView({ threshold: 0.9 });
-    const [SkillRef, SkillRefInView] = useInView({ threshold: 0.9 });
-    const [ResumeRef, ResumeRefInView] = useInView({ threshold: 0.9 });
+    const [InfoRef, InfoRefInView] = useInView({rootMargin:'-80px', threshold: 0.3 });
+    const [ProjectRef, ProjectRefInView] = useInView({rootMargin:'-80px',  threshold: 0.3 });
+    const [SkillRef, SkillRefInView] = useInView({rootMargin:'-80px',  threshold: 0.3 });
+    const [ResumeRef, ResumeRefInView] = useInView({rootMargin:'-80px',  threshold: 0.3 });
 
     const toggle = () => {
         setIsOpen(!isOpen); //If true then false, if false t
