@@ -7,8 +7,8 @@ import DisplaySection from './components/DisplaySection'
 
 function App() {
   return (
-    <Router>
-      <DisplaySection />
+    <Router >
+      <DisplaySection/>
       <HomePage />
     </Router>
   );

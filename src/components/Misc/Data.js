@@ -17,15 +17,15 @@ export const AboutMeObject = {
 
 export const ResumeObject = {
     id: 'resume',
-    lightBg: true,
-    lightText: false,
+    lightBg: false,
+    lightText: true,
     lightTextdesc: true,
     topLine: 'My Resume',
     heading: 'Current Resume',
     description: 'This is Resume',
     buttonLabel: 'Check out my projects',
     imgStart: true,
-    img: '/images/undraw_Internet_on_the_go_re_vben.svg',
+    img: '/images/undraw_sync_files_xb3r.svg',
     alt:'AboutMeSvg',
     dark: true,
     primary: true,
@@ -63,6 +63,24 @@ export const ProjectObject = {
     img: '/images/undraw_data_reports_706v.svg',
     alt:'AboutMeSvg',
     dark: true,
+    primary: true,
+    darkText: false,
+}
+
+
+export const SkillObject = {
+    id: 'skills',
+    lightBg: true,
+    lightText: false,
+    lightTextdesc: true,
+    topLine: 'My Skills',
+    heading: 'Front End : ReactJS, HTML5, CSS3, Bootstrap, AngularJS \nBack End: SpringBoot, AWS',
+    description: 'This is Project',
+    buttonLabel: 'View my resume',
+    imgStart: true,
+    img: '/images/',
+    alt:'AboutMeSvg',
+    dark: false,
     primary: true,
     darkText: true,
 }

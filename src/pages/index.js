@@ -2,31 +2,56 @@ import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import InfoSection from '../components/InfoSection'
-import { AboutMeObject, ResumeObject, ProjectObject } from '../components/Misc/Data'
+import { AboutMeObject, ResumeObject, ProjectObject, SkillObject } from '../components/Misc/Data'
 import ProjectSection from '../components/ProjectSection'
+import SkillSection from '../components/SkillSection'
+
+import { useInView } from "react-intersection-observer";
 
 const Home = () => {
 
     //Function to change the state to toggle
     const [isOpen, setIsOpen] = useState(false);
 
+    const [InfoRef, InfoRefInView] = useInView({ threshold: 0.9 });
+    const [ProjectRef, ProjectRefInView] = useInView({ threshold: 0.9 });
+    const [SkillRef, SkillRefInView] = useInView({ threshold: 0.9 });
+    const [ResumeRef, ResumeRefInView] = useInView({ threshold: 0.9 });
+
     const toggle = () => {
         setIsOpen(!isOpen); //If true then false, if false t
-    }    
-
-
-
+    }
 
     return (
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
 
-            <InfoSection {...AboutMeObject}/>
+            <Navbar toggle={toggle} navColor={
+                InfoRefInView
+                ? "#646c74"
+                : ProjectRefInView
+                ? "#051323"
+                : SkillRefInView 
+                ? "#646c74" 
+                : ResumeRefInView 
+                ? "#051323"
+                : "#646c74"} />
 
-            <ProjectSection {...ProjectObject}/>
+            <section ref={InfoRef} >
+                <InfoSection {...AboutMeObject} />
+            </section>
 
-            <InfoSection {...ResumeObject}/>
+            <section ref={ProjectRef}>
+                <ProjectSection  {...ProjectObject} />
+            </section>
+
+            <section ref={SkillRef}>
+                <SkillSection {...SkillObject} />
+            </section>
+
+            <section ref={ResumeRef}>
+                <InfoSection  {...ResumeObject} />
+            </section>
 
         </>
     )
